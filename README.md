@@ -10,10 +10,10 @@ codegrep
 codegrep YOURSEARCHTERM
 
 # search trough all js files
-codegrep YOURSEARCHTERM -in *.js -in public/javascript/*
+codegrep YOURSEARCHTERM --in *.js --in public/javascript/*
 
 # exclude certain files from results
-codegrep YOURSEARCHTERM -ex *.bin -ex build/*
+codegrep YOURSEARCHTERM --ex *.bin --ex build/*
 
 # search case insensitive
 codegrep YOURSEARCHTERM -i
