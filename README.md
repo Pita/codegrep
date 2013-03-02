@@ -1,25 +1,26 @@
 # codegrep
+```bash
+# install using
+sudo npm install -g codegrep
 
-    # install using
-    sudo npm install -g codegrep
+# get help by just typing
+codegrep
 
-    # get help by just typing
-    codegrep
+# go to a code directory and search trough it using
+codegrep YOURSEARCHTERM
 
-    # go to a code directory and search trough it using
-    codegrep YOURSEARCHTERM
+# search trough all js files
+codegrep YOURSEARCHTERM -in *.js -in public/javascript/*
 
-    # search trough all js files
-    codegrep YOURSEARCHTERM -in *.js -in public/javascript/*
+# exclude certain files from results
+codegrep YOURSEARCHTERM -ex *.bin -ex build/*
 
-    # exclude certain files from results
-    codegrep YOURSEARCHTERM -ex *.bin -ex build/*
+# search case insensitive
+codegrep YOURSEARCHTERM -i
 
-    # search case insensitive
-    codegrep YOURSEARCHTERM -i
-
-    # use a regex to search 
-    codegrep /YOURREGEX/
+# use a regex to search 
+codegrep /YOURREGEX/
+```
 
 ### Search results design inspired by Sublime Text
 
